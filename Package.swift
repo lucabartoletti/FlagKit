@@ -18,6 +18,9 @@ let package = Package(
         .target(
             name: "FlagKit",
             dependencies: [],
+            swiftSettings: [
+                .unsafeFlags(["-enable-library-evolution"])
+            ]
             exclude: [
                 "Info.plist",
                 "FlagKitFramework.xcconfig"
